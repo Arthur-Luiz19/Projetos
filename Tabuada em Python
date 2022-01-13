@@ -1,0 +1,17 @@
+//Nesse arquivo, irei mostrar o passo a passo da solução deste programa.
+//Primeiro, uma variável com input será criado para ler qualquer número:
+
+n1= int(input('Digite um número:'))
+
+// Agora, com 
+tb = n1*1
+tb2 = n1*2
+tb3 = n1*3
+tb4 = n1*4
+tb5 = n1*5
+tb6 = n1*6
+tb7 = n1*7
+tb8 = n1*8
+tb9 = n1*9
+tb10 = n1*10
+print(f'Tabuada \n {n1}x1 = {tb} \n {n1}x2 = {tb2}\n {n1}x3 = {tb3}\n {n1}x4 = {tb4}\n {n1}x5 = {tb5}\n {n1}x6 = {tb6}\n {n1}x7 = {tb7}\n {n1}x8 = {tb8}\n {n1}x9 = {tb9}\n {n1}x10 = {tb10}')
