@@ -1,0 +1,22 @@
+from datetime import date
+
+sexo = str(input('Você é homem ou mulher? '))
+if sexo == 'Homem':
+    nasc = int(input('Digite o ano de nascimento '))
+    atual = date.today().year
+    idade = atual - nasc
+    print(f'Sua idade é {idade}')
+    if idade < 18:
+        saldo = 18 - idade
+        ano = atual + saldo
+        print(f'Ainda vai se alistar, faltam {saldo} anos')
+        print(f'Seu alistamento será em {ano}')
+    elif idade == 18:
+        print('Você precisa se alistar, URGENTE')
+    else:
+        saldo = idade - 18
+        ano = atual - saldo
+        print(f'Já passou do prazo para o alistemaneto, foi há {saldo} ano(s)')
+        print(f'Seu alistamento foi em {ano}')
+elif sexo == 'Mulher':
+    print('Não precisa se alistar')
